@@ -3,7 +3,7 @@
 
 ## What is this?
 
-This is **a theme I'm working on that uses Jekyll's static site generator. I made it in order to integrate Jekyll with Bootstrap-4 so I could test any new features as Bootstrap 4 transitions from alpha to beta.
+This is **a theme I'm working on that uses Jekyll's static site generator. I made it in order to integrate Jekyll with Bootstrap-4** so I could test any new features as Bootstrap 4 transitions from alpha to beta.
 
 You can find the source code on my github page at [https://github.com/Gentry333/Gentry333.github.io](https://github.com/Gentry333/Gentry333.github.io)
 
