@@ -1,8 +1,6 @@
 # A Jekyll Theme with Bootstrap 4 integration
 
 
-[jekyll](https://github.com/jekyll/jekyll)
-
 ## What is this?
 
 This is a theme I'm working on that uses Jekyll's static site generator. I made it in order to integrate with Bootstrap-4 so I can test and blog about the new features as I build it.
@@ -11,7 +9,7 @@ Jekyll is a simple and blog-aware static site generator built in Ruby. In laymen
 
 You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](http://jekyllrb.com/)
 
-You can find the source code for Jekyll at
+You can find the source code for Jekyll at [jekyll](https://github.com/jekyll/jekyll)
 
 
 
