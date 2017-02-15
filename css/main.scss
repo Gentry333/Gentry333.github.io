@@ -2,18 +2,18 @@
 
 ---
 
+@import 'variables.scss';
 /*
 Import all Bootstrap 4 Sass files (if you don't want to import the everything, you can 
 optionally import only the files you want. Read the Bootstrap4 documentation to see what each
 component does).
 */
-@import '../_sass/bootstrap4/bootstrap.scss';
+@import 'bootstrap4/bootstrap.scss';
 @import '../_sass/bootstrap4/bootstrap-reboot.scss';
 @import '../_sass/bootstrap4/bootstrap-grid.scss';
 
 /* This is where you can set your custom settings. */
 @import 'styles.scss';
-@import 'variables.scss';
 @import 'base.scss';
 
 
