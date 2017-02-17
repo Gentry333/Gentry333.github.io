@@ -4,7 +4,7 @@ Start of base mobile first styling
 %Roboto{ font-family: 'Roboto', sans-serif; }
 %Acme { font-family: 'Acme', sans-serif; }
 
-body {
+body, html {
 	@extend %Roboto;
 }
 
@@ -79,35 +79,42 @@ body {
 
 .font-post {
 	margin-top: 60px;
+	padding: 0;
+
 }
 
 .post {
 	margin-top: 100px;
 }
 
-.post-padding {
- padding-bottom: 15px;
-}
 
 .post-content-front {
-	//width: 80%;
-	line-height: 40px;
+	margin-top: 65px;
 	a { color: #333; }
-	margin-top: 20px;
+
 	img {padding: 0px;
-		overflow: hidden;}
+		margin: 0px;
+		overflow: hidden;
+	}
 		-webkit-box-shadow: 0px 5px 11px 5px rgba(0,0,0,0.21);
 		-moz-box-shadow: 0px 5px 11px 5px rgba(0,0,0,0.21);
 		box-shadow: 0px 5px 11px 5px rgba(0,0,0,0.21);
+		.btn-primary {color: $white; margin-top: 8px;}
 }
 
-.post-meta, .post-link {
-	margin: 10px 10px 10px 10px;
+.post-front-teaser {
+	padding: 15px;
+}
+
+.site-footer {
+	height: 60px;
+	margin-top: 30px;
+	background-color: #333;
 }
 
 /* Default
 
- Mobile first layout, so @media query for XS is necessary.
+ Extra Small.
 */
 
 
@@ -129,6 +136,9 @@ body {
 	    font-weight: 800px;
     }
 }
+.post-content-front {
+	margin-top: 35px;
+	}
 }
 
 /* Medium. Above 48em (768px) */

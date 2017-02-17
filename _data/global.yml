@@ -9,7 +9,7 @@ description: 'An Open-Source Bootstrap 4 Jekyll Theme by Gentry333.'
 # SWAP OUT LOCAL DEVELOPMENT URL WITH PUBLISHED URL WHEN NEEDED:
 
 url: 'https://gentry333.github.io' # the base hostname & protocol for your site
-# url: 'http://127.0.0.1:4000' # the base hostname & protocol for your site
+#url: 'http://127.0.0.1:4000' # the base hostname & protocol for your site
 
 
 

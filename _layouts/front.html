@@ -16,20 +16,23 @@ layout: default
 
 <div class="container font-post">
   <h1>Recent Blog Posts</h1>
-  
   {{ content }}
   <div class="row">
     {% for post in site.posts %}
-      <div class="col-sm-12 cod-md-6 col-lg-6 jump-response">
-      <div class="post-content-front post-padding">
-        <img class="post-image img-fluid" src="{{site.global.url}}/img/posts/{{post.title}}.jpg"/>
+      <div class="col-sm-12 cod-md-6 col-lg-6">
+       <div class="post-content-front">
+          <img class="post-image img-fluid" src="{{site.global.url}}/img/posts/{{post.title}}.jpg"/>
+          <div class="post-front-teaser">
 
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+          <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
 
-        <h2>
-          <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
-        </h2>
-      </div>
+          <h2>
+            <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | strip_html | truncatewords:5 }}</a>
+          </h2>
+          {{ post.content | strip_html | truncatewords:75}}<br>
+              <a class="btn btn-primary" href="{{ post.url }}">Read more...</a><br><br>
+        </div>
+        </div>
       </div>
     {% endfor %}
     </div>
