@@ -15,20 +15,23 @@ layout: default
 </div>
 
 <div class="container font-post">
-  <h1>Posts</h1>
+  <h1>Recent Blog Posts</h1>
   
   {{ content }}
-
-  <ul class="post-list">
+  <div class="row">
     {% for post in site.posts %}
-      <li>
+      <div class="col-sm-12 cod-md-6 col-lg-6 jump-response">
+      <div class="post-content-front post-padding">
+        <img class="post-image img-fluid" src="{{site.global.url}}/img/posts/{{post.title}}.jpg"/>
+
         <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
 
         <h2>
           <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
         </h2>
-      </li>
+      </div>
+      </div>
     {% endfor %}
-  </ul>
+    </div>
 
 </div>
