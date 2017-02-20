@@ -9,7 +9,13 @@ For now:
 
 2.Than run "bundle install" in the directory to ensure all the dependencies are met and the correct gem versions are installed.
 
-3.Run "bundle exec jekyll serve" to build and host the site.
+3.Modify the global settings in /data/global.yml to match your own (ass needed):
+
+-for the 'url' setting, I added one for local development (1.127.0,0:4000), and one for when I upload to production server (simply uncomment and recomment the other at publishing, than switch back to the local one to continue any modification).
+
+- change any of the Social media links to your own as needed.
+
+4.Run "bundle exec jekyll serve" to build and host the site.
 
 
 #### Also: 
@@ -20,13 +26,7 @@ The Bootstrap 4 SCSS files are installed locally in "_sass/bootstrap". Everythin
 To over-ride the bootrap base SCSS variables, modify them in '_sass/_variables.scss' (to make upgrading to a newer bootstrap version easier).
 
 
-## Misc. Instructions
 
-### Modify the global settings in /data/global.yml to match your own (ass needed):
-
--for the 'url' setting, I added one for local development (1.127.0,0:4000), and one for when I upload to production server (simply uncomment and recomment the other at publishing, than switch back to the local one to continue any modification).
-
-- change any of the Social media links to your own as needed.
 
 ### Modify the frontpage image?
 
