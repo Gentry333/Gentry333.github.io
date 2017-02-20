@@ -9,11 +9,13 @@ For now:
 
 2.Than run "bundle install" in the directory to ensure all the dependencies are met and the correct gem versions are installed.
 
-3.Modify the global settings in /data/global.yml to match your own (ass needed):
+3.Modify the global settings in /data/global.yml to match your own (as needed):
 
--for the 'url' setting, I added one for local development (1.127.0,0:4000), and one for when I upload to production server (simply uncomment and recomment the other at publishing, than switch back to the local one to continue any modification).
+-for the 'url' setting, I added one for local development (127.0.0.1:4000), and another for when I upload to a production server (simply uncomment and recomment the other at publishing time, than switch back to the local one to continue any modification).
 
 - change any of the Social media links to your own as needed.
+
+NOTE: careful editing any yml files as they take indentation into account (spaces)
 
 4.Run "bundle exec jekyll serve" to build and host the site.
 
@@ -21,7 +23,7 @@ For now:
 #### Also: 
 the bootstrap javascript settings, font awesome, and jquery are linked to a remote CDN. You can modify those address if needed (they are located in the _includes/head.html).
 
-The Bootstrap 4 SCSS files are installed locally in "_sass/bootstrap". Everything is loaded by default. If you would only like to load specific bootstrap files, than edit the imports in 'css/main.scss'
+The Bootstrap 4 SCSS files are installed locally in "_sass/bootstrap". Everything is loaded by default. If you would only like to load specific bootstrap files instead of everything, than edit the imports in 'css/main.scss'
 
 To over-ride the bootrap base SCSS variables, modify them in '_sass/_variables.scss' (to make upgrading to a newer bootstrap version easier).
 
@@ -32,7 +34,14 @@ To over-ride the bootrap base SCSS variables, modify them in '_sass/_variables.s
 
 - the font page image is located in the img folder (BG_nice_image.jpg). Simply overwrite it leaving the name the same. Or change the name of it in the /_layouts/front.html file.
 
-### Each blog post on the front page will put an image that is the name of the title of the blog post. i.e. Whatever you put beside 'title:' in your posts, put an image of the same name in jpg format in the /img/posts folder (see the other post examples as to where you put the title. It must be in the "Front Matter" at the top of the file, between the '---'').
+### How are the images set on the front page blog teasers?
+
+- Each blog post on the front page will put an image that is the name of the title of the blog post. i.e. Whatever you put beside 'title:' in your posts, put an image of the same name in jpg format in the /img/posts folder (see the other post examples as to where you put the title. It must be in the "Front Matter" at the top of the file, between the '---'').
+
+#### You can change the length of the frontpage teaser and the title max length at:
+- inside the /_layouts/front.html
+post.title | strip_html | truncatewords:5
+post.content | strip_html | truncatewords:75
 
 
 ## Demo
