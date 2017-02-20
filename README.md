@@ -1,5 +1,39 @@
 # A Jekyll Theme with Bootstrap 4 integration
 
+## Install
+
+NOTE: Once I'm happy with the final configuration, I'll create a gem file. 
+For now:
+
+1.Simply clone the website with git to wherever you want.
+
+2.Than run "bundle install" in the directory to ensure all the dependencies are met and the correct gem versions are installed.
+
+3.Run "bundle exec jekyll serve" to build and host the site.
+
+4. If you are not hosting on github, just upload the _site folder contents to wherever you want to host the site (DO NOT EVER EDIT THE CONTENTS OF _site. Make the changes to the outside files, than re-serve the site.)
+
+Also: the bootstrap javascript settings, font awesome, and jquery are linked to a remote CDN. You can modify those address if needed (they are located in the _includes/head.html).
+
+The Bootstrap 4 SCSS files are installed locally in "_sass/bootstrap". Everything is loaded by default. If you would only like to load specific bootstrap files, than edit the imports in 'css/main.scss'
+
+To over-ride the bootrap base SCSS variables, modify them in '_sass/_variables.scss' (to make upgrading to a newer bootstrap version easier).
+
+
+## Misc. Instructions
+
+### Modify the global settings in /data/global.yml to match your own (ass needed):
+
+-for the 'url' setting, I added one for local development (1.127.0,0:4000), and one for when I upload to production server (simply uncomment and recomment the other at publishing, than switch back to the local one to continue any modification).
+
+- change any of the Social media links to your own as needed.
+
+### Modify the frontpage image?
+
+- the font page image is located in the img folder (BG_nice_image.jpg). Simply overwrite it leaving the name the same. Or change the name of it in the /_layouts/front.html file.
+
+### Each blog post on the front page will put an image that is the name of the title of the blog post. i.e. Whatever you put beside 'title:' in your posts, put an image of the same name in jpg format in the /img/posts folder (see the other post examples as to where you put the title. It must be in the "Front Matter" at the top of the file, between the '---'').
+
 
 ## Demo
 

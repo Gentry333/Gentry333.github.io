@@ -8,7 +8,7 @@ Import all Bootstrap 4 Sass files (if you don't want to import the everything, y
 optionally import only the files you want. Read the Bootstrap4 documentation to see what each
 component does).
 */
-@import 'bootstrap4/bootstrap.scss';
+@import '../_sass/bootstrap4/bootstrap.scss';
 @import '../_sass/bootstrap4/bootstrap-reboot.scss';
 @import '../_sass/bootstrap4/bootstrap-grid.scss';
 
