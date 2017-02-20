@@ -40,8 +40,8 @@ NOTE: careful editing any yml files as they take indentation into account (space
 
 #### You can change the length of the frontpage teaser and the title max length at:
 - inside the /_layouts/front.html
-post.title | strip_html | truncatewords:5
-post.content | strip_html | truncatewords:75
+-  post.title | strip_html | truncatewords:5
+-  post.content | strip_html | truncatewords:75
 
 
 ## Demo
