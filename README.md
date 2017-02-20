@@ -11,9 +11,9 @@ For now:
 
 3.Run "bundle exec jekyll serve" to build and host the site.
 
-4. If you are not hosting on github, just upload the _site folder contents to wherever you want to host the site (DO NOT EVER EDIT THE CONTENTS OF _site. Make the changes to the outside files, than re-serve the site.)
 
-Also: the bootstrap javascript settings, font awesome, and jquery are linked to a remote CDN. You can modify those address if needed (they are located in the _includes/head.html).
+#### Also: 
+the bootstrap javascript settings, font awesome, and jquery are linked to a remote CDN. You can modify those address if needed (they are located in the _includes/head.html).
 
 The Bootstrap 4 SCSS files are installed locally in "_sass/bootstrap". Everything is loaded by default. If you would only like to load specific bootstrap files, than edit the imports in 'css/main.scss'
 
