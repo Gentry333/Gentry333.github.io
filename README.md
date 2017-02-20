@@ -11,21 +11,21 @@ For now:
 
 3.Modify the global settings in /data/global.yml to match your own (as needed):
 
--for the 'url' setting, I added one for local development (127.0.0.1:4000), and another for when I upload to a production server (simply uncomment and recomment the other at publishing time, than switch back to the local one to continue any modification).
+- for the 'url' setting, I added one for local development (127.0.0.1:4000), and another for when I upload to a production server (simply uncomment and recomment the other at publishing time, than switch back to the local one to continue any modification).
 
 - change any of the Social media links to your own as needed.
 
-NOTE: careful editing any yml files as they take indentation into account (spaces)
+NOTE: careful editing any yml files as they take indentation into account (spaces).S
 
 4.Run "bundle exec jekyll serve" to build and host the site.
 
 
 #### Also: 
-the bootstrap javascript settings, font awesome, and jquery are linked to a remote CDN. You can modify those address if needed (they are located in the _includes/head.html).
+-  the bootstrap javascript settings, font awesome, and jquery are linked to a remote CDN. You can modify those address if needed (they are located in the _includes/head.html).
 
-The Bootstrap 4 SCSS files are installed locally in "_sass/bootstrap". Everything is loaded by default. If you would only like to load specific bootstrap files instead of everything, than edit the imports in 'css/main.scss'
+-  The Bootstrap 4 SCSS files are installed locally in "_sass/bootstrap". Everything is loaded by default. If you would only like to load specific bootstrap files instead of everything, than edit the imports in 'css/main.scss'
 
-To over-ride the bootrap base SCSS variables, modify them in '_sass/_variables.scss' (to make upgrading to a newer bootstrap version easier).
+-  To over-ride the bootrap base SCSS variables, modify them in '_sass/_variables.scss' (to make upgrading to a newer bootstrap version easier).
 
 
 
